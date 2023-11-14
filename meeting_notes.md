@@ -19,3 +19,7 @@ Long term health outcomes
 Wafik/Maoz: Coding & Analysis
 
 Jack/Ishmael: Presentation
+
+Final Rating:
+
+1(dataset 1) + 1(dataset 2) + 3(dataset 3) = final rating, the lower the better
