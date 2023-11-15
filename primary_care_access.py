@@ -22,4 +22,5 @@ def get_most_providers():
     list_of_neighborhoods = list(neighborhoods.keys())
     list_of_neighborhoods.sort(key=lambda element: len(neighborhoods[element]))
     list_of_neighborhoods.reverse()
-    return[(hood, len(neighborhoods[hood])) for hood in list_of_neighborhoods]
+    return[[hood for hood in list_of_neighborhoods], len(neighborhoods[hood]) for hood in list_of_neighborhoods]
+
