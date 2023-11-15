@@ -1,5 +1,6 @@
 import pandas as pd
 import fpsnippets
+import matplotlib.pyplot as plot
 
 def get_most_providers():
     data = pd.read_csv("data-primary-care-access-facilities.csv")
@@ -22,5 +23,17 @@ def get_most_providers():
     list_of_neighborhoods = list(neighborhoods.keys())
     list_of_neighborhoods.sort(key=lambda element: len(neighborhoods[element]))
     list_of_neighborhoods.reverse()
-    return[[hood for hood in list_of_neighborhoods], len(neighborhoods[hood]) for hood in list_of_neighborhoods]
+    return[
+        [hood for hood in list_of_neighborhoods], 
+        [len(neighborhoods[hood]) for hood in list_of_neighborhoods]
+    ]
 
+providers = get_most_providers()
+plot.bar(providers[0], providers[1])
+plot.title("Neighborhoods by Primary Care Providers")
+plot.xlabel("Neighborhoods")
+plot.ylabel("Primary Care Providers")
+plot.xticks(rotation=90, fontsize='x-small')
+plot.autoscale(enable=True, axis='x', tight=False)
+plot.tight_layout()
+plot.show()
