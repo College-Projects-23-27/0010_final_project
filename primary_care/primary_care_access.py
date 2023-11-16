@@ -1,6 +1,7 @@
 import pandas as pd
 import fpsnippets
 import matplotlib.pyplot as plot
+import graphical_neighborhood
 
 def get_most_providers():
     data = pd.read_csv("data-primary-care-access-facilities.csv")
@@ -29,11 +30,4 @@ def get_most_providers():
     ]
 
 providers = get_most_providers()
-plot.bar(providers[0], providers[1])
-plot.title("Neighborhoods by Primary Care Providers")
-plot.xlabel("Neighborhoods")
-plot.ylabel("Primary Care Providers")
-plot.xticks(rotation=90, fontsize='x-small')
-plot.autoscale(enable=True, axis='x', tight=False)
-plot.tight_layout()
-plot.show()
+graphical_neighborhood(providers[0], providers[1])
