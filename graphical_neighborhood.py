@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plot
+from lead_levels.lead_level import get_blood_lead_levels
 
 def graph_data(neighborhoods, values):
     plot.bar(neighborhoods, values)
