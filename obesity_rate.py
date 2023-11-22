@@ -1,7 +1,7 @@
 import pandas as pd
 
 def get_pittsburgh_obesity_areas():
-    data = pd.read_csv("./datasets/obesity-ac-2006-2010censustracts.csv")
+    data = pd.read_csv("datasets/obesity-ac-2006-2010censustracts.csv")
     obesity_by_neighborhood = {}
 
     for i in range(len(data)):

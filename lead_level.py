@@ -3,7 +3,7 @@ from util import fpsnippets
 
 def get_blood_lead_levels():
     neighborhoods = {}
-    data = pd.read_csv("./datasets/wprdc_censustracts.csv")
+    data = pd.read_csv("datasets/wprdc_censustracts.csv")
 
     for i in range(len(data)):
         person = data.iloc[i]
