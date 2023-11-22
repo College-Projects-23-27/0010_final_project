@@ -1,0 +1,11 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache files
+__pycache__/
+
+# Specific files (if any specific files you want to ignore)
+# e.g., primary_care/data-primary-care-access-facilities.csv
+
+# Other file patterns as needed
+

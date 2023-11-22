@@ -5,7 +5,7 @@ import matplotlib.pyplot as plot
 from util import fpsnippets
 
 def get_most_providers():
-    data = pd.read_csv("primary_care/data-primary-care-access-facilities.csv")
+    data = pd.read_csv("./datasets/data-primary-care-access-facilities.csv")
     neighborhoods = {}
 
     for i in range(len(data)):

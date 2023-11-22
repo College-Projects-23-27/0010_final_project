@@ -62,7 +62,7 @@ def census_to_neighborhoods(census_tract):
         list[str]: A list of Pittsburgh neighborhood names that 
     """
     # Census to ZIP data
-    census_data = pandas.read_csv("./ZIP_TRACT_032020.csv")
+    census_data = pandas.read_csv("./datasets/ZIP_TRACT_032020.csv")
     tract_filtered = census_data[census_data["TRACT"] == census_tract]
     if len(tract_filtered) < 1:
         return []
