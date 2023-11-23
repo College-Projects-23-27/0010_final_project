@@ -3,6 +3,6 @@
 - Wafik Tawfik (wat29@pitt.edu)
 
 # Datasets
-- Lead rates in bloodstream
+- Lead level in bloodstream
 - Obesity rates
 - Primary care access
