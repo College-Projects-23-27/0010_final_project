@@ -19,7 +19,7 @@ def get_pittsburgh_obesity_areas():
 
     avg_obesity_by_neighborhood = {neighborhood: sum(rates)/len(rates) for neighborhood, rates in obesity_by_neighborhood.items()}
 
-    sorted_neighborhoods = sorted(avg_obesity_by_neighborhood, key=avg_obesity_by_neighborhood.get, reverse=True)
+    sorted_neighborhoods = sorted(avg_obesity_by_neighborhood, key=avg_obesity_by_neighborhood.get, reverse=False)
 
     return [sorted_neighborhoods, [avg_obesity_by_neighborhood[neighborhood] for neighborhood in sorted_neighborhoods]]
 

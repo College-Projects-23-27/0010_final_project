@@ -16,7 +16,7 @@ def get_most_providers():
             neighborhoods.setdefault(neighborhood, []).append(data_point['GROUP_NAME'])
 
     list_of_neighborhoods = list(neighborhoods.keys())
-    list_of_neighborhoods.sort(key=lambda element: len(neighborhoods[element]), reverse=True)
+    list_of_neighborhoods.sort(key=lambda element: len(neighborhoods[element]), reverse=False)
     
     return [list_of_neighborhoods, [len(neighborhoods[hood]) for hood in list_of_neighborhoods]]
 
