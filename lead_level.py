@@ -23,10 +23,12 @@ def get_blood_lead_levels():
     list_of_neighborhoods = list(neighborhoods.keys())
     list_of_neighborhoods.sort(key=lambda element: neighborhoods[element])
     list_of_neighborhoods.reverse()
+    
+    # Only want the top 20
 
     return([
-        [hood for hood in list_of_neighborhoods], 
-        [neighborhoods[hood] for hood in list_of_neighborhoods]
+        [hood for hood in list_of_neighborhoods[:20]], 
+        [neighborhoods[hood] for hood in list_of_neighborhoods[:20]]
     ])
 
 lead_levels = get_blood_lead_levels()
